@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id="main">
+             <div id="img-div">
+                 <img src="images/image.jpg" class="responsive"/> 
+             </div>
+                <h1 class="headline"> Support Satisfaction Form</h1><br>
+             <div id="mainform">
+             <div id="form">
+                 <form action="submit" method="POST" target="_self" autocomplete="on">
+                 <label for="fname">First Name:</label><br>
+                 <input type="text" id="fname" name="firstname" maxlength="50" required>
+                <br>
+                <br>
+                 <label for="lname">Last Name:</label><br>
+                 <input type="text" id="lname" name="lastname" maxlength="50" required>
+                <br>
+                <br>
+                 <label for="email">Email:</label><br>
+                 <input type="email" id="email" name="email" maxlength="30" required>
+                <br>
+                <br>
+                 <label for="pnumber">Phone Number:</label><br>
+                 <input type="tel" id="pnumber" name="phone number"  maxlength="11" required>
+                 <br>
+                 <br>
+                <label>Gender :</label><br><br>
+                  <input type="radio" class="container" name="gender" required>
+                  <label for="male">Male</label>
+            
+                  <input type="radio" class="container" name="gender" required>
+                  <label for="female">Female</label>
+                  <br>
+                  <br>
+                  <label>How did you hear about us ?</label>
+                  <br>
+                  <br>
+                  <input type="radio" class="container" name="how did you hear about us" required>
+                  <label for="facebook">Facebook</label>
+                  
+                  <input type="radio" class="container" name="how did you hear about us" required>
+                  <label for="instagram">Instagram</label>
+                  
+                  <input type="radio" class="container" name="how did you hear about us" required>
+                  <label for="twitter">Twitter</label>
+                  <br>
+                  <br>
+                  <label for ="techstaff">Was the Tech staff Friendly ?</label><br><br>
+                  <select id="techstaff" name="techstaff">
+                      <option></option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                  </select>
+                  <br>
+                  <br>
+                  <label for ="tech">How did you contact the technical support team ?</label><br><br>
+                  <select id="tech" name="tech">
+                      <option></option>
+                      <option value="email">Email</option>
+                      <option value="phone">Phone</option>
+                      <option value="walkin">Walk-in</option>
+                  </select>
+                  <br>
+                  <br>
+                  <label for ="need">How helpfull was the technical support staff to your need ?</label><br><br>
+                  <select id="need" name="need">
+                      <option></option>
+                      <option value="veryhelpful">Very helpfull</option>
+                      <option value="nothelpful">Not helpfull</option>
+                      <option value="didnotcare">Did not care</option>
+                  </select>
+                  <br>
+                  <br>
+                  <label for ="resolve">Was your problem resolved ?</label><br><br>
+                  <select id="resolve" name="resolve">
+                      <option></option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="kindof">Kind off</option>
+                  </select>
+                  <br>
+                  <br>
+                  <button type="button">
+                      <strong>Submit</strong>
+                </button>
+                 </form> 
+            </div> 
+             </div>
+        </div>
+    </body>
+</html>

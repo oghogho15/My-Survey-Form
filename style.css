@@ -1,0 +1,138 @@
+html,body{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin: 0;
+padding: 0;
+color:black;
+border-radius: 10px;
+
+}
+#main{
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: 10px double;
+    background-color:peachpuff;
+    width:fit-content;
+}
+img{
+    border-radius: 30px;
+}
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+.headline{
+    text-decoration: dashed;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#form{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+input[type=text]{
+    width: 100%;
+    font-size: small;
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+input[type=email]{
+    width: 100%;
+    font-size: small;
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+input[type=tel]{
+    width: 100%;
+    font-size: small;
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+label{
+    text-align: left !important;
+}
+select{
+    width: 100%;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: cornsilk;
+}
+:required{
+    background-color: red;
+}
+.container{
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+.container:hover input~:checked{
+    background-color: #ccc;
+
+}
+ @media(max-width: 768px) {
+    #main{
+        margin: 0px auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 10px double;
+        max-width: 100%;
+    }  
+    input[type=text]{
+        min-width: 100%;
+    } 
+    input[type=email]{
+        min-width: 100%;
+    }
+    input[type=tel]{
+        min-width: 100%;
+    }
+    select{
+        min-width: 100%;
+        
+    }
+} 
+button{
+    background-color: brown;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin:4px 2px;
+    width: 100%;
+    padding: 12px 18px;
+
+
+}
+#mainform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
